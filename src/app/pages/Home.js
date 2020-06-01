@@ -5,6 +5,9 @@ const GET_PROGRAMMER_QUERY = `
   query ProgrammerQuery($name: String) {
     programmer(name: $name) {
       name
+      hasSmile
+      selfDescription
+      INTEL
     }
   }
 `
@@ -23,8 +26,15 @@ export default () => {
   if (error) return <div>{'Something bad happened'}</div>
 
   return (
-    <div>
-      {data.programmer.name}
-    </div>
+    <dl>
+      <dt>Name</dt>
+      <dd>{data.programmer.name}</dd>
+      <dt>Has Smile with him</dt>
+      <dd>{data.programmer.hasSmile ? 'Yes' : 'No'}</dd>
+      <dt>Name</dt>
+      <dd>{data.programmer.selfDescription}</dd>
+      <dt>...LINK...INTEL data incoming...</dt>
+      <dd>{data.programmer.INTEL}</dd>
+    </dl>
   )
 }
