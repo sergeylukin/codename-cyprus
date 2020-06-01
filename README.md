@@ -3,6 +3,8 @@
 Made for my friends at Cyprus. A quickl DEMO of React Hooks / GraphQL / SSR (yes,
 server side rendering).
 
+[LIVE DEMO](http://sergeylukin.insomnia247.nl:5445/)
+
 ## Development
 
 ```shell
